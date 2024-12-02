@@ -126,18 +126,53 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(610,360)" to="(620,360)"/>
     <wire from="(610,240)" to="(620,240)"/>
     <wire from="(200,540)" to="(460,540)"/>
-    <comp lib="3" loc="(610,240)" name="Adder"/>
+    <comp lib="4" loc="(480,340)" name="Register">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(620,240)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
     <comp lib="5" loc="(120,500)" name="Button">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="2" loc="(220,300)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(670,340)" name="AND Gate"/>
+    <comp lib="3" loc="(610,240)" name="Adder"/>
+    <comp lib="6" loc="(150,106)" name="Text">
+      <a name="text" val="Архитектура фон Неймана"/>
+    </comp>
+    <comp lib="2" loc="(700,250)" name="Multiplexer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(180,430)" name="NOT Gate"/>
+    <comp lib="4" loc="(790,250)" name="Register"/>
+    <comp lib="4" loc="(390,300)" name="RAM">
+      <a name="addrWidth" val="4"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(570,340)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="4" loc="(140,290)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x4"/>
     </comp>
     <comp lib="0" loc="(510,250)" name="Probe">
       <a name="facing" val="west"/>
       <a name="radix" val="10unsigned"/>
     </comp>
-    <comp lib="1" loc="(670,340)" name="AND Gate"/>
-    <comp lib="2" loc="(700,250)" name="Multiplexer">
-      <a name="width" val="8"/>
+    <comp lib="1" loc="(320,420)" name="AND Gate">
+      <a name="facing" val="north"/>
     </comp>
+    <comp lib="4" loc="(570,340)" name="Register">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="4" loc="(480,250)" name="Register"/>
     <comp lib="0" loc="(390,300)" name="Splitter">
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
@@ -148,38 +183,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit5" val="1"/>
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
-    </comp>
-    <comp lib="4" loc="(570,340)" name="Register">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="4" loc="(480,340)" name="Register">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="1" loc="(320,420)" name="AND Gate">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="4" loc="(480,250)" name="Register"/>
-    <comp lib="1" loc="(180,430)" name="NOT Gate"/>
-    <comp lib="4" loc="(390,300)" name="RAM">
-      <a name="addrWidth" val="4"/>
-      <a name="bus" val="separate"/>
-    </comp>
-    <comp lib="0" loc="(620,240)" name="Probe">
-      <a name="facing" val="west"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="4" loc="(790,250)" name="Register"/>
-    <comp lib="4" loc="(140,290)" name="Counter">
-      <a name="width" val="4"/>
-      <a name="max" val="0x4"/>
-    </comp>
-    <comp lib="2" loc="(220,300)" name="Multiplexer">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(570,340)" name="Splitter">
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-      <a name="appear" val="right"/>
     </comp>
   </circuit>
 </project>
